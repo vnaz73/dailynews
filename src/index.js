@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Header } from './components/header';
-import Router from './routes';
+
+import MyRouter from './routes';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/styles.css';
@@ -12,8 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={ReduxStore()}>
-      <Header />
-      <Router />
+      <MyRouter />
     </Provider>
   </React.StrictMode>
 );
